@@ -1,193 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ABOUT US</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- Para íconos -->
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Start - María José y Miguel</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+  <style>
+    body {
+      background: #f5f5f5;
+    }
+    .main-container {
+      margin-top: 70px;
+    }
+    .profile-section {
+      padding: 40px 0;
+    }
+    .card {
+      border-radius: 12px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+    .card-img-top {
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+      object-fit: cover;
+      height: 200px;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <!-- Navegación -->
-    <nav class="navbar navbar-dark bg-dark navbar-expand-lg sticky-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">About Us</a>
-        <a class="navbar-brand" href="mariajose.html">Maria Jose</a>
-        <a class="navbar-brand" href="miguel.html">Miguel Padilla</a>
-  
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-  
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="project.html">Project</a>
-            </li>
-            <li>
-            <a href="index.html" class="btn btn-primary mt-3">Go back</a>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Start</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="mariajose.html">Maria Jose</a>
           </li>
-          </ul>
+          <li class="nav-item">
+            <a class="nav-link" href="miguel.html">Miguel Angel Padilla</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="github.html">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <div class="container main-container">
+    <div class="profile-section text-center">
+      <h1 class="display-5">Welcome to our site</h1>
+      <p class="lead">Here you will find information about María José and Miguel Ángel.</p>
+    </div>
+
+    <!-- CARDS -->
+    <div class="row justify-content-center g-4">
+      <!-- Card María José -->
+      <div class="col-sm-6 col-lg-5">
+        <div class="card h-100 shadow-sm">
+          <img src="fot3.jpg" class="card-img-top" alt="María José">
+          <div class="card-body text-center">
+            <h5 class="card-title">María José Pérez Montenegro</h5>
+            <p class="card-text">Systems Engineering student, proactive and eager to learn.</p>
+            <a href="mariajose.html" class="btn btn-primary">Ver Perfil</a>
+          </div>
         </div>
       </div>
-    </nav>
-  
-
-    <div class="row mt-3">
-      <div class="col-md-3 align-center">
-        <img src="fot1.jpg" alt="" class="img img-responsive" />
-      </div>
-      <div class="col-md-9">
-        <h2>I am Maria Jose Perez Montenegro</h2>
-        <p>I am a student of Systems Engineering</p>
-      </div>
-    </div>
-
-    <div class="row mt-3">
-      <div class="col-md-3">
-        <p>Celular: 77052675</p>
-      </div>
-      <div class="col-md-3">
-        <p>Email: mariajose49@gmail.com</p>
-      </div>
-      <div class="col-md-3">
-        <p>Facebook: https://www.facebook.com/majo2704</p>
-      </div>
-    </div>
-
-    <div>
-      <a href="https://github.com/Maria270104/About-me" target="_blank">
-          <button>Profile GitHub</button>
-        </a>
-    </div>
-
-    
-    <div class="row mt-3">
-      <div class="col-md-3 align-center">
-        <img src="coder2.png" alt="" class="img img-responsive" />
-      </div>
-      <div class="col-md-9">
-        <h2>I am Miguel Angel Padilla Peralta</h2>
-        <p>i am sofwware engineer and english student</p>
-      </div>
-    </div>
-
-    <div>
-      <a href="https://github.com/Maria270104/About-me" target="_blank">
-          <button>Profile GitHub</button>
-        </a>
-    </div>
-
-    <div class="row mt-3">
-      <div class="col-md-3">
-        <p>Cel: 68919490</p>
-      </div>
-      <div class="col-md-3">
-        <p>Email: Markrey088@gmail.com</p>
-      </div>
-      <div class="col-md-3">
-        <p>Facebook: @Miguel Padilla</p>
-      </div>
-    </div>
-
-    <div class="row mt-4">
-      <!-- About Us -->
-      <div id="about" class="col-md-4 content-box">
-        <div class="icon-box">
-          <i class="fas fa-user-alt"></i>
+      <!-- Card Miguel Ángel -->
+      <div class="col-sm-6 col-lg-5">
+        <div class="card h-100 shadow-sm">
+          <img src="coder2.png" class="card-img-top" alt="Miguel Ángel">
+          <div class="card-body text-center">
+            <h5 class="card-title">Miguel Ángel Padilla Peralta</h5>
+            <p class="card-text">Passionate about software development and automation.</p>
+            <a href="miguel.html" class="btn btn-primary">Ver Perfil</a>
+          </div>
         </div>
-        <h4>About Us</h4>
-        <p><strong>Maria Jose Perez Montenegro</strong><br>Student of Systems Engineering. Passionate about web development, GitHub contributor, UI/UX enthusiast.</p>
-        <p><strong>Miguel Angel Rodriguez</strong><br>Backend developer, database specialist, and future DevOps engineer. Loves automating workflows.</p>
-        <p><strong>Project Description:</strong><br>We are building a dynamic, user-friendly website that includes contact management, project tracking, and educational resources.</p>
-      </div>
-    
-      <!-- Contact -->
-<div id="contact" class="col-md-4 content-box h-100 text-center">
-  <div class="icon-box mb-3">
-    <i class="fas fa-phone-alt"></i>
-  </div>
-  <h4>Contact</h4>
-  <p><strong>¿Necesitas ayuda? ¡Escríbenos por WhatsApp!</strong></p>
-
-  <!-- Maria Jose -->
-  <div class="mb-3">
-    <img src="fot1.jpg" alt="Maria Jose" class="rounded-circle mb-2" width="100" height="100">
-    <p><strong>Maria Jose</strong></p>
-    <a href="https://wa.me/59177052675?text=Hola%20en%20qu%C3%A9%20podemos%20ayudarte%3F" target="_blank" class="btn btn-success w-100">
-      <i class="fab fa-whatsapp"></i> WhatsApp a Maria Jose
-    </a>
-  </div>
-
-  <!-- Miguel Padilla -->
-  <div class="mb-3">
-    <img src="coder2.png" alt="Miguel Padilla" class="rounded-circle mb-2" width="100" height="100">
-    <p><strong>Miguel Padilla</strong></p>
-    <a href="https://wa.me/59168919490?text=Hola%20en%20qu%C3%A9%20podemos%20ayudarte%3F" target="_blank" class="btn btn-success w-100">
-      <i class="fab fa-whatsapp"></i> WhatsApp a Miguel Padilla
-    </a>
-  </div>
-
-  <hr>
-
-  <p><strong>Email:</strong><br> 
-    <a href="mailto:mariajose49@gmail.com">mariajose49@gmail.com</a>
-  </p>
-  <p><strong>Location:</strong><br> Av. Paragua 2do Anillo, Santa Cruz, Bolivia</p>
-  <p><strong>Availability:</strong><br> Mon - Fri, 9:00 AM - 6:00 PM</p>
-
-  <!-- Redes sociales -->
-  <div class="mt-3">
-    <a href="https://www.facebook.com/majo2704" target="_blank" class="btn btn-outline-primary me-2">
-      <i class="fab fa-facebook"></i>
-    </a>
-    <a href="https://instagram.com/tu-instagram" target="_blank" class="btn btn-outline-danger">
-      <i class="fab fa-instagram"></i>
-    </a>
-  </div>
-</div>
-
-
-    
-      <!-- Project -->
-      <div id="project" class="col-md-4 content-box">
-        <div class="icon-box">
-          <i class="fas fa-cogs"></i>
-        </div>
-        <h4>The Star-Spangled Banner</h4>
-        <h5>Letra por Francis Scoott Key, 1814</h5>
-        <p>1.
-          O say can you see, by the dawn's early light,
-          What so proudly we hailed at the twilight's last gleaming,
-          Whose broad stripes and bright stars through the perilous fight,
-          O'er the ramparts we watched were so gallantly streaming?
-          And the rocket's red glare, the bombs bursting in air,
-          Gave proof through the night that our flag was still there;
-          O say does that star-spangled banner yet wave
-          O'er the land of the free and the home of the brave?
-          </p>
       </div>
     </div>
+  </div>
 
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Project</title>
-  <link href="https://www.youtube.com/watch?v=CIPUpmcAZJg" rel="stylesheet" />
-</head>
-
- 
-</body>
-</html>
-    
-
+  <!-- Bootstrap JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
